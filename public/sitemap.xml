@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://yoursite.vercel.app/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://yoursite.vercel.app/business</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://yoursite.vercel.app/entertainment</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://yoursite.vercel.app/health</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://yoursite.vercel.app/sport</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://yoursite.vercel.app/science</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://yoursite.vercel.app/technology</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://yoursite.vercel.app/health</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://yoursite.vercel.app/science</loc>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,85 @@
+.Home {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+}
+
+
+.Home .news-feeds {
+    place-self: center;
+}
+
+.search-feed {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-bar {
+    width: 500px;
+    height: 50px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.search-bar::placeholder {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.search-button {
+    height: 50px;
+    padding: 9px 20px;
+    border: none;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: none;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    position: relative;
+    right: 40px;
+    background-color: #e05c3a;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    transition: ease-in-out 300ms;
+}
+
+.search-button:hover {
+    background-color: #bb3817;
+    color: white;
+    cursor: pointer;
+}
+
+.search-button:active {
+    background-color: #e05c3a;
+    color: white;
+    transition: ease-in-out 100ms;
+}
+
+.feed-list {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 5px;
+}
+
+
+
+
+
+

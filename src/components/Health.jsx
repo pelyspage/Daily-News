@@ -1,0 +1,21 @@
+import React from 'react'
+import Feeds from '../UI/Feeds'
+import '../CSS/Health.css'
+import { motion } from 'framer-motion'
+
+function Health() {
+  return (
+    <div 
+      className="Health"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+        <div className='feed-list'>
+          <Feeds category='health'/>
+      </div>
+    </div>
+  )
+}
+
+export default Health

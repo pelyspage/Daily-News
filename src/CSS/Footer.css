@@ -1,0 +1,153 @@
+.footer {
+    background: #111;
+    color: #ccc;
+    padding: 60px 40px 20px;
+    margin-top: 60px;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.footer-logo span {
+    color: #e05c3a;
+}
+
+.footer-tagline {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 8px;
+}
+
+.footer-links, .footer-social, .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links h4, .footer-social h4, .footer-contact h4 {
+    color: #fff;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 4px;
+}
+
+.footer-links a, .footer-social a {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+    color: #e05c3a;
+}
+
+.footer-contact p {
+    color: #888;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.footer-contact a {
+    color: #e05c3a;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+    word-break: break-all;
+}
+
+.footer-contact a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+/* Tablet - 768px */
+@media (max-width: 768px) {
+    .footer-top {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    .footer-brand {
+        grid-column: span 3;  /* full width on tablet */
+    }
+
+    .footer {
+        padding: 40px 30px 20px;
+    }
+
+    .footer-logo {
+        font-size: 1.5rem;
+    }
+}
+
+/* Mobile - 425px */
+@media (max-width: 425px) {
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .footer-brand {
+        grid-column: span 2;  /* full width */
+    }
+
+    .footer-contact {
+        grid-column: span 2;  /* full width so email doesnt overflow */
+    }
+
+    .footer {
+        padding: 40px 20px 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
+
+/* Mobile - 375px */
+@media (max-width: 375px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand {
+        grid-column: span 1;
+    }
+
+    .footer-contact {
+        grid-column: span 1;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 30px 16px 16px;
+    }
+}

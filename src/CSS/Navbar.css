@@ -1,0 +1,56 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 5px 10px; */
+}
+
+.logo-container .logo {
+  width: 180px;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.logo-container .logo-text {
+  font-size: 24px;
+  font-weight: 800;
+  color: #fffaff;
+  display: none;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+  margin-right: 15px;
+}
+
+.links .nav-link {
+  text-decoration: none;
+  color: #cecdcb;
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 2.5px solid transparent;
+  transition: border-bottom-color 0.8s ease-in-out;
+}
+
+.links .nav-link:hover {
+  font-weight: 600;
+  border-bottom-color: #e05c3a;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: #2d2924;
+}
