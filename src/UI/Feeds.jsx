@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import './Feeds.css';
-import Newscard from './Newscard';
+import NewsCard from './NewsCard';
 
 function Feeds({ category }) {
   const [articles, setArticles] = useState([]);
@@ -22,7 +22,7 @@ function Feeds({ category }) {
   return (
     <div className="feed">
       {articles.map((article, index) => (
-        <Newscard
+        <NewsCard
           key={index}
           title={article.title}
           image={article.urlToImage}
