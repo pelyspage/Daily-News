@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import './Feeds.css';
-import NewsCard from './NewsCard';
+import NewsCard from './NewsCard';  // ← what does yours say exactly?
 
 function Feeds({ category }) {
   const [articles, setArticles] = useState([]);
