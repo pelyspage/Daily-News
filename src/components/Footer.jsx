@@ -21,6 +21,7 @@ function Footer() {
           <Link to="/health">Health</Link>
           <Link to="/science">Science</Link>
           <Link to="/technology">Technology</Link>
+          <Link to="/privacy">Privacy Policy</Link>
         </div>
 
         {/* Pages */}

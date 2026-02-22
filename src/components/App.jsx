@@ -24,6 +24,7 @@ function App() {
           <Route path="/science" element={<Science />} />
           <Route path="/sport" element={<Sport />} />
           <Route path="/technology" element={<Technology />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>
         <Footer />
       </BrowserRouter>
