@@ -7,6 +7,7 @@ import Sport from './Sport'
 import Science from './Science'
 import Technology from './Technology'
 import Footer from './Footer'
+import PrivacyPolicy from './PrivacyPolicy'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import '../CSS/App.css'
 
