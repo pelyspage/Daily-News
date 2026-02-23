@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import './Feeds.css';
-import NewsCard from './NewsCard';  // ← what does yours say exactly?
+import NewsCard from './NewsCard';
 
 function Feeds({ category }) {
   const [articles, setArticles] = useState([]);
@@ -9,9 +9,17 @@ function Feeds({ category }) {
   useEffect(() => {
     console.log("category: ", category);
     const fetchArticles = async () => {
-      const response = await fetch(`/api/news?category=${category}`);
+
+      const response = await fetch(
+        import.meta.env.DEV
+          ? `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`  // ← local development
+          : `/api/news?category=${category}`  // ← production (Vercel)
+      );
+
       const data = await response.json();
-      setArticles(data.articles.filter(article => article.urlToImage));
+      if (data.articles) {
+        setArticles(data.articles.filter(article => article.urlToImage));
+      }
       console.log(data.articles);
     };
 

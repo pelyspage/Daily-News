@@ -37,11 +37,11 @@ function Footer() {
           <a href="https://www.facebook.com/olaniyi.oluwapelumi.israel" target="_blank" rel="noopener noreferrer">Facebook</a>
           <a href="https://www.instagram.com/israelxalt?igsh=bnhieGI1M2Zsc3g1" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a 
-            href="https://wa.me/2348012345678?text=Hello%20Daily%20News" 
+            href="https://wa.me/2349161174669?text=Hello%20Daily%20News" 
             target="_blank" 
             rel="noopener noreferrer"
           >
-            What's App
+            WhatsApp
           </a>
         </div>
 

@@ -55,8 +55,6 @@
 
 .news-icon img {
     width: 500px;
-    /* margin-left: 50px; */
-    /* transform: rotate(10deg); */
     cursor: pointer;
     z-index: 1;
 }
@@ -90,4 +88,129 @@
     background-color: #6100649d;
     backdrop-filter: blur(2px);
     z-index: 2;
+}
+
+
+/* Small laptop / iPad Pro - 1024px */
+@media (max-width: 1024px) {
+    .Landingpage {
+        padding: 18px;
+    }
+
+    .page-text {
+        width: 380px;
+    }
+
+    .page-text h1 {
+        font-size: 36px;
+    }
+
+    .page-text h1 span {
+        font-size: 32px;
+    }
+
+    .page-text p {
+        font-size: 16px;
+    }
+
+    .page-text span {
+        font-size: 16px;
+    }
+
+    .news-icon img {
+        width: 380px;
+    }
+
+    .news-icon::after {
+        font-size: 13px;
+        padding: 4px 16px;
+        left: -25px;
+        top: 70px;
+    }
+
+    .news-icon::before {
+        font-size: 13px;
+        padding: 4px 16px;
+        right: -25px;
+        bottom: 100px;
+    }
+}
+
+
+/* Tablet - 768px - smaller text and image */
+@media (max-width: 768px) {
+    .Landingpage {
+        padding: 16px;
+    }
+
+    .page-text {
+        width: 320px;
+    }
+
+    .page-text h1 {
+        font-size: 30px;
+    }
+
+    .page-text h1 span {
+        font-size: 26px;
+    }
+
+    .page-text p {
+        font-size: 14px;
+    }
+
+    .page-text span {
+        font-size: 14px;
+    }
+
+    .news-icon img {
+        width: 320px;
+    }
+
+    .news-icon::after {
+        font-size: 12px;
+        padding: 4px 14px;
+        left: -20px;
+        top: 60px;
+    }
+
+    .news-icon::before {
+        font-size: 12px;
+        padding: 4px 14px;
+        right: -20px;
+        bottom: 80px;
+    }
+}
+
+/* Mobile - 425px - remove image and before/after */
+@media (max-width: 425px) {
+    .Landingpage {
+        padding: 30px 20px;
+        justify-content: flex-start;
+    }
+
+    .page-text {
+        width: 100%;
+    }
+
+    .page-text h1 {
+        font-size: 28px;
+    }
+
+    .page-text h1 span {
+        font-size: 24px;
+    }
+
+    .page-text p {
+        font-size: 14px;
+    }
+
+    .page-text span {
+        font-size: 13px;
+    }
+
+    /* hide image and pseudo elements on mobile */
+    .news-icon {
+        display: none;
+    }
 }
