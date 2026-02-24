@@ -51,7 +51,7 @@
 .hamburger {
   display: none;
   cursor: pointer;
-  color: #2d2924;
+  color: #cecdcb;
 }
 
 /* Tablet - 768px - links still show, no hamburger */
@@ -80,7 +80,7 @@
 
     .links {
         gap: 8px;
-        margin-right: 12px;
+        margin-right: 0;
     }
 
     .links .nav-link {

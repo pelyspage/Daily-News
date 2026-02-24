@@ -36,7 +36,7 @@ function Home() {
       {/* Search results - only shows when user searches */}
       {submittedQuery && (
         <div className='search-results'>
-          <h3>Results for: "{submittedQuery}"</h3>
+          <h3 className='search-result'>Results for: "{submittedQuery}"</h3>
           <Feeds category={submittedQuery} />
         </div>
       )}
